@@ -6,9 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import Navbar from './Components/Navbar';
 import { BrowserRouter , Route , Routes } from 'react-router-dom';
 import Products from './Components/Products';
-import Home from './Components/Home';
-import Contactos from "./Components/Contactos"
 import Product from './Components/Product';
+import Contactos from './Pages/Contactos/contactos';
+import HomePage from './Pages/HomePage/homePage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,10 +18,10 @@ root.render(
     <Navbar />
 
     <Routes>
-    <Route path="/" element={<Home />} />
+    <Route path="/" element={<HomePage />} />
     <Route path="/products" element={<Products/>}/>
     <Route path="/product/:id" element={<Product/>} />
-    <Route path="/contactos" element={<Contactos />} />
+    <Route path="/contactos" element={<Contactos/>} />
     
     </Routes>
    
