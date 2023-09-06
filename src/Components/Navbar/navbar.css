@@ -1,0 +1,19 @@
+.navbar{
+    background-color: bisque;
+    height: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.botão {
+    border: 2px solid black;
+    font-weight: bolder;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+}
+
+.botão:hover{
+    background-color: yellow;
+    
+}

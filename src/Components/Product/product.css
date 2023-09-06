@@ -1,0 +1,124 @@
+.test{
+margin-top: 100px;
+}
+
+
+.carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.slide{
+    width: 450px;
+    height: 450px;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 7px #666;
+    
+}
+
+.slide-hidden{
+    display: none   ;
+}
+
+
+
+.product{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+.details{
+    background-color: rgb(220, 255, 243);
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
+}
+
+.button{
+    margin-top: auto;
+    align-self: center;
+    box-shadow: 3px 4px 0px 0px #1564ad;
+	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background-color:#79bbff;
+	border-radius:5px;
+	border:1px solid #337bc4;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:12px 44px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+
+}
+
+.button:hover {
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
+}
+
+.description{
+    background: rgb(255, 255, 172);
+    width: 20%;
+    min-height: 450px;
+    max-height: 450px;
+    overflow: auto;
+}
+
+.divider{
+    background-color: black;
+    height: 350px;
+    width: 4px;
+    margin-top: 50px ;
+}
+
+
+.arrow{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    color: white;
+    filter: drop-shadow(0px 0px 5px #555)    
+}
+
+.arrow:hover{
+    cursor: pointer;
+}
+
+.arrow-l {
+    left:1rem
+}
+
+.arrow-r{
+    right: 1rem;
+}
+
+.indicators{
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.indicator{
+    background-color: white;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px #555;
+    margin: 0 0.2rem;
+    cursor: pointer;
+}
+
+.indicator-inactive{
+    background-color: gray;
+}
