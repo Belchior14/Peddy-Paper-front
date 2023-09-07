@@ -6,12 +6,15 @@ function SendEmail() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [text, setText] = useState("");
+  const [needAll , setNeedAll] = useState(false)
 
 
   function sendEmail (e) {
     e.preventDefault()
 
     if(name && email && text) {
+
+
 
         const templateParams = {
             from_name: name, 
@@ -26,13 +29,18 @@ function SendEmail() {
             setName("")
             setEmail("")
             setText("")
+            setNeedAll(!needAll)
 
         })
         .catch((err) => console.log(err))
 
       
 
+    } else {
+      setNeedAll(!needAll)
     }
+
+
 
     
   }
@@ -54,9 +62,14 @@ function SendEmail() {
            {/*  <label>Texto:</label> */}
             <textarea className="textarea" placeholder="Escreva a sua mensagem" onChange={(e) => {setText(e.target.value)}} value={text} />
             </div>
+
+       
           
           <input type="submit"  className="btn-lrg submit-btn" value="Enviar"/>
 
+          <div className= {needAll ? "needAll" : "hidden"} >
+              <span>Obrigatório preencher todos os campos.</span>
+            </div>
 
         </form>
 

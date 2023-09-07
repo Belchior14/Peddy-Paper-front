@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { client } from "../../client";
 import "./product.css";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import {BsArrowLeftCircleFill, BsArrowRightCircleFill} from "react-icons/bs"
 
 function Product() {
   const { id } = useParams();
+
+  const navigate =  useNavigate()
 
   const [product, setProduct] = useState();
 
@@ -61,9 +63,11 @@ function Product() {
   }, []);
 
 
+const goToContact = () => {
+ navigate("/contactos")
+}
 
 
-console.log(slides)
 
   return (
     <div className="test">
@@ -99,6 +103,7 @@ console.log(slides)
             <h3>
               Preço: <span>{product.price}€</span>
             </h3>
+            <div className="buttons">
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -107,6 +112,9 @@ console.log(slides)
             >
               Comprar
             </a>
+            <button onClick={goToContact} className="contactButton">Contactar</button>
+            </div>
+   
           </div>
 
           <div className="divider"></div>
