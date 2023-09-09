@@ -103,7 +103,7 @@ const goToContact = () => {
             <h3>
               Preço: <span>{product.price}€</span>
             </h3>
-            <div className="buttons">
+            <div className="buttonsMin850">
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -122,6 +122,18 @@ const goToContact = () => {
           <div className="description">
             <p>{product.description}</p>
           </div>
+
+          <div className="buttonsMax850">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={product.link}
+              className="button"
+            >
+              Comprar
+            </a>
+            <button onClick={goToContact} className="contactButton">Contactar</button>
+            </div>
         </div>
       ) : null}
     </div>

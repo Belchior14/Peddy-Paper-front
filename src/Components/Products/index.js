@@ -10,8 +10,7 @@ function Products() {
     client
       .get("/products")
       .then((response) => {
-        console.log(response.data.products);
-        setProducts(response.data.products);
+          setProducts(response.data.products);
       })
       .catch((error) => console.log(error));
   };
@@ -23,10 +22,10 @@ function Products() {
   return (
     <div className="allProdutos">
       {products ? (
-        products.map((product) => {
+        products.map((product , idx) => {
           return (
             <Link to={`/product/${product._id}`}>
-              <div className="oneProduct">
+              <div className="oneProduct" key={idx}>
                 <p>
                   Nome: <span className="nameProduct">{product.name}</span>
                 </p>
