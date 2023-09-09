@@ -1,6 +1,6 @@
 .container {
     background-color: #444442;
-    padding-top: 85px;
+    padding-top: 30px;
     padding-bottom: 10px;
 }
 
@@ -42,9 +42,7 @@ h1 {
     font-size: 1.2rem;
 }
 
-
 .submit-btn {
-    
     padding: 7px 35px;
     border-radius: 60px;
     display: inline-block;
@@ -75,6 +73,48 @@ h1 {
     visibility: block;
 }
 
-.hidden{
+.hidden {
     visibility: hidden;
+}
+
+@media (max-width:600px) {
+
+    .title {
+        font-size: 40px;
+    }
+
+    .input {
+        width: 250px;
+        height: 50px;
+        color: white;
+        padding-left: 25px;
+        background-color: #272424;
+        font-size: 1.3rem;
+    }
+
+    .textarea {
+        width: 250px;
+        height: 200px;
+        padding-left: 15px;
+        padding-top: 25px;
+        background-color: #272424;
+        resize: none;
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    .needAll {
+        background-color: #272424;
+        width: 250px;
+        height: 70px;
+        text-align: center;
+        padding: 15px;
+        color: white;
+        font-weight: bold;
+        visibility: block;
+    }
+
+    .hidden {
+        visibility: hidden;
+    }
 }
