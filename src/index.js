@@ -9,6 +9,7 @@ import Products from './Components/Products';
 import Product from './Components/Product';
 import Contactos from './Pages/Contactos/contactos';
 import HomePage from './Pages/HomePage/homePage';
+import Produtos from './Pages/Productos/produtos';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,7 +20,7 @@ root.render(
 
     <Routes>
     <Route path="/" element={<HomePage />} />
-    <Route path="/products" element={<Products/>}/>
+    <Route path="/products" element={<Produtos/>}/>
     <Route path="/product/:id" element={<Product/>} />
     <Route path="/contactos" element={<Contactos/>} />
     

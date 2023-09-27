@@ -4,3 +4,15 @@
     color: brown;
     text-align: center;
 }
+
+.logoContainer{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 50px;
+}
+
+.logo{
+    width: 45%;
+    
+}

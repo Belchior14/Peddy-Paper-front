@@ -3,7 +3,17 @@ import "./homePage.css"
 
 function HomePage() {
   return (
-    <div className='home'>homePage</div>
+    <>
+        
+        <div className='logoContainer'>
+        <img className='logo' src="https://res.cloudinary.com/dmbxv880g/image/upload/v1695827435/HMS/logo_exyplp.jpg" alt="logo"/>
+        </div>
+       
+    
+    
+    </>
+
+
   )
 }
 
