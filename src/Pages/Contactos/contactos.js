@@ -4,7 +4,7 @@ import SendEmail from '../../Components/SendEmail'
 
 function Contactos() {
   return (
-    <div>
+    <div className='contactosPage'>
 
     <SendEmail/>
     </div>

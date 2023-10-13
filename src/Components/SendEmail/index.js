@@ -7,6 +7,7 @@ function SendEmail() {
   const [email, setEmail] = useState("");
   const [text, setText] = useState("");
   const [needAll , setNeedAll] = useState(false)
+  const [contactoSent , setContactoSent] = useState(false)
 
 
   function sendEmail (e) {
@@ -29,7 +30,8 @@ function SendEmail() {
             setName("")
             setEmail("")
             setText("")
-            setNeedAll(!needAll)
+            setNeedAll(false)
+            setContactoSent(true)
 
         })
         .catch((err) => console.log(err))
@@ -37,7 +39,8 @@ function SendEmail() {
       
 
     } else {
-      setNeedAll(!needAll)
+      setNeedAll(true)
+      setContactoSent(false)
     }
 
 
@@ -69,6 +72,10 @@ function SendEmail() {
 
           <div className= {needAll ? "needAll" : "hidden"} >
               <span>Obrigatório preencher todos os campos.</span>
+            </div>
+
+            <div className= {contactoSent ? "sent" : "hidden"} >
+              <span>E-mail enviado, irá ser respondido o mais rápido possível :) </span>
             </div>
 
         </form>

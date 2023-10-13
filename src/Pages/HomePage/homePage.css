@@ -1,18 +1,53 @@
-.home{
-    font-size: 40px;
-    font-weight: bold;
-    color: brown;
-    text-align: center;
+.homePage {
+    background: rgb(22, 22, 27);
+    background: linear-gradient(90deg, rgba(22, 22, 27, 1) 18%, rgba(72, 72, 83, 1) 68%, rgba(29, 38, 40, 1) 96%);
+    height: 100vh
 }
 
-.logoContainer{
-display: flex;
-justify-content: center;
-align-items: center;
-margin-top: 50px;
+
+.logoContainer {
+    padding-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.logo{
-    width: 45%;
-    
+.logo {
+    height: 200px;
+    width: 400px;
+}
+
+.threeContainers {
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.containerTitle{
+    font-size: 1.6rem;
+    color: rgb(117, 117, 117);
+    font-weight: bolder;
+    font-family: Georgia, serif;
+}
+
+.missionContainer,
+.aboutUsContainer,
+.servicesContainer {
+    background-color: rgb(255, 240, 240);
+    color: black;
+    max-width: 500px;
+    padding: 10px 15px 5x 15px;
+    -webkit-box-shadow: 3px 3px 6px 0px rgba(237, 237, 237, 1);
+    -moz-box-shadow: 3px 3px 6px 0px rgba(237, 237, 237, 1);
+    box-shadow: 3px 3px 6px 0px rgba(237, 237, 237, 1);
+    line-height: 30px;
+    font-family: Georgia, serif;
+    text-align: justify;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }

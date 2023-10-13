@@ -1,7 +1,5 @@
-.contactos{
-    font-size: 50px;
-    font-weight: bold;
-    text-align: center;
-    color: blue;
-
+.contactosPage{
+    background: rgb(22, 22, 27);
+    background: linear-gradient(90deg, rgba(22, 22, 27, 1) 18%, rgba(72, 72, 83, 1) 68%, rgba(29, 38, 40, 1) 96%);
+    height: 100vh
 }

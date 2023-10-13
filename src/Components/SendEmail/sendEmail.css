@@ -1,5 +1,7 @@
 .container {
-    background-color: #444442;
+    background: rgb(22, 22, 27);
+    background: linear-gradient(90deg, rgba(22, 22, 27, 1) 18%, rgba(72, 72, 83, 1) 68%, rgba(29, 38, 40, 1) 96%);
+    height: 100vh;
     padding-top: 30px;
     padding-bottom: 10px;
 }
@@ -75,6 +77,17 @@ h1 {
 
 .hidden {
     visibility: hidden;
+}
+
+.sent{
+    background-color: #272424;
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    padding: 7px;
+    color: white;
+    font-weight: bold;
+    visibility: block;
 }
 
 @media (max-width:600px) {
