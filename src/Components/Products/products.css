@@ -9,7 +9,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;   
-}
+   
+    
+  }
 
 .allProducts{
     display: flex;
@@ -25,14 +27,14 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    border: 2px solid black;
+    border: 2px solid #ffffff;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     margin: 10px;
     padding:30px 50px 30px 50px;
     min-width: 250px;
     max-width: 251px;
     text-decoration: none;
-    color: black;
+   
  
 }
 
@@ -41,6 +43,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 200px;
+  color: white;
 }
 
 
@@ -64,7 +67,7 @@
   border-bottom: 2px solid #9b9b9b;
   outline: 0;
   font-size: 1.3rem;
-  color: #000000;
+  color: #ffffff;
   padding: 7px 0;
   background: transparent;
   transition: border-color 0.2s;
@@ -73,6 +76,7 @@
     font-size: 1.3rem;
     cursor: text;
     top: 20px;
+   
   }
 }
 
@@ -106,3 +110,84 @@
   &:required,&:invalid { box-shadow:none; }
 }
 /* demo */
+
+
+.orderForm{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.buttonsOrderContainer{
+  display: flex;
+  gap: 15px;
+
+}
+
+.order {
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+  font-weight: bold;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+  min-width: 150px;
+}
+.order:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+.order:active {
+	position:relative;
+	top:1px;
+}
+
+.backToTop{
+  display: none;
+  box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+  font-weight: bold;
+	font-size:17px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+  min-width: 150px;
+}
+
+@media (max-width: 550px) {
+
+  .buttonsOrderContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+}
+
+@media (max-width: 850px) {
+
+
+  .backToTop{
+    display: block;
+  }
+}
