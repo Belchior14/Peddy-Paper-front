@@ -94,9 +94,9 @@ function Products() {
               <div key={idx}>
                 <Link to={`/product/${product._id}`}>
                   <div className="oneProduct">
-                    <p className="artigo">
+                    <p className="artigo" >
                       Artigo:{" "}
-                      <span className="nameProduct">{product.name}</span>
+                      <span className="nameProduct" >{product.name}</span>
                     </p>
                     <img
                       className="imageProduct"

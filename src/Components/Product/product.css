@@ -129,9 +129,9 @@
     }
 
     .description {
-        width: 20%;
-        min-height: 450px;
-        max-height: 450px;
+       
+        min-height: 250px;
+        max-height: 250px;
         overflow: auto;
     }
 
@@ -182,7 +182,9 @@
 
     .details{
             display: flex;
+            flex-direction: column;
             gap: 25px;
+            align-items: center;
 
     }
 

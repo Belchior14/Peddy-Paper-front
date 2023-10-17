@@ -1,5 +1,7 @@
 import React from "react";
 import "./homePage.css";
+import Slider from "../../Components/Slider";
+
 
 function HomePage() {
   return (
@@ -10,6 +12,10 @@ function HomePage() {
           src="https://res.cloudinary.com/dmbxv880g/image/upload/v1695827435/HMS/logo_exyplp.jpg"
           alt="logo"
         />
+      </div>
+
+      <div>
+       {<Slider/>}
       </div>
 
       <div className="threeContainers">

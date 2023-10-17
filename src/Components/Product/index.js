@@ -103,6 +103,16 @@ const goToContact = () => {
             <h3>
               Preço: <span>{product.price}€</span>
             </h3>
+            <div className="description">
+            {product.description.map((descri, idx) => {
+              return(
+                <ul>
+                  <li key={idx}>{descri}</li>
+                  <br></br>
+                </ul>
+              )
+            })}
+          </div>
             <div className="buttonsMin850">
             <a
               target="_blank"
@@ -117,11 +127,9 @@ const goToContact = () => {
    
           </div>
 
-          <div className="divider"></div>
+         
 
-          <div className="description">
-            <p>{product.description}</p>
-          </div>
+ 
 
           <div className="buttonsMax850">
             <a

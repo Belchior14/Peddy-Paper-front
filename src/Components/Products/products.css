@@ -34,8 +34,6 @@
     min-width: 250px;
     max-width: 251px;
     text-decoration: none;
-   
- 
 }
 
 .artigo{
@@ -44,6 +42,7 @@
   text-overflow: ellipsis;
   max-width: 200px;
   color: white;
+  text-decoration: none;
 }
 
 

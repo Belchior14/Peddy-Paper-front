@@ -18,15 +18,15 @@
 }
 
 .threeContainers {
-    margin-top: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     display: flex;
     justify-content: space-evenly;
 
 }
 
-.containerTitle{
+.containerTitle {
     font-size: 1.6rem;
     color: white;
     font-weight: bolder;
@@ -37,13 +37,12 @@
 .aboutUsContainer,
 .servicesContainer {
     color: white;
-    min-width: 500px;
     max-width: 500px;
     padding: 10px 15px 5x 15px;
     border: 2px solid white;
-    box-shadow: 2px 3px 5px 0px rgba(255,255,255,0.75);
--webkit-box-shadow: 2px 3px 5px 0px rgba(255,255,255,0.75);
--moz-box-shadow: 2px 3px 5px 0px rgba(255,255,255,0.75);
+    box-shadow: 2px 3px 5px 0px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 2px 3px 5px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 2px 3px 5px 0px rgba(255, 255, 255, 0.75);
     line-height: 30px;
     font-family: Georgia, serif;
     text-align: justify;
@@ -61,48 +60,48 @@
 
     */
 
-    @media (max-width:850px) {
+@media (max-width:850px) {
 
-        .homePage{
-            height: 100vh
-        }
+    .homePage {
+        height: 100vh
+    }
 
-        .logo {
-           
-            width: 60%
-        }
+    .logo {
 
-        .threeContainers {
-            margin-top: 50px;
-            padding-top: 50px;
-            padding-bottom: 50px;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            align-items: center;
-        
-        }
+        width: 60%
+    }
 
-.missionContainer,
-.aboutUsContainer,
-.servicesContainer {
-    color: white;
-    min-width: 80%;
-    max-width: 80%;
-    padding: 10px 15px 5x 15px;
-    border: 2px solid white;
-    box-shadow: 2px 3px 5px 0px rgba(255,255,255,0.75);
--webkit-box-shadow: 2px 3px 5px 0px rgba(255,255,255,0.75);
--moz-box-shadow: 2px 3px 5px 0px rgba(255,255,255,0.75);
-    line-height: 30px;
-    font-family: Georgia, serif;
-    text-align: justify;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-
+    .threeContainers {
+        margin-top: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
 
     }
+
+    .missionContainer,
+    .aboutUsContainer,
+    .servicesContainer {
+        color: white;
+        min-width: 80%;
+        max-width: 80%;
+        padding: 10px 15px 5x 15px;
+        border: 2px solid white;
+        box-shadow: 2px 3px 5px 0px rgba(255, 255, 255, 0.75);
+        -webkit-box-shadow: 2px 3px 5px 0px rgba(255, 255, 255, 0.75);
+        -moz-box-shadow: 2px 3px 5px 0px rgba(255, 255, 255, 0.75);
+        line-height: 30px;
+        font-family: Georgia, serif;
+        text-align: justify;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+
+}
