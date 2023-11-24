@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser"
 import "./sendEmail.css"
 
+
 function SendEmail() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -50,6 +51,7 @@ function SendEmail() {
 
   return (
     <div className="container">
+      
       <h1 className="title">Contacto</h1>
 
         <form className="form" onSubmit={sendEmail}>
