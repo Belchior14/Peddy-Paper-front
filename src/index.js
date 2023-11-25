@@ -10,6 +10,7 @@ import Product from './Components/Product';
 import Contactos from './Pages/Contactos/contactos';
 import HomePage from './Pages/HomePage/homePage';
 import Produtos from './Pages/Productos/produtos';
+import Snowfall from 'react-snowfall'
 
 //test
 
@@ -17,7 +18,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter >
-    
+    <Snowfall snowflakeCount={100} />
     <Navbar />
 
     <Routes>
