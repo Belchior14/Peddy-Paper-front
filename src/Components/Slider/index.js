@@ -2,6 +2,7 @@ import "./slider.css";
 import React, { useEffect, useState } from "react";
 import { client } from "../../client";
 
+
 function Slider() {
   const [slideProducts, setSlideProducts] = useState();
 
@@ -19,6 +20,7 @@ function Slider() {
   }, []);
   return (
     <div className="mainPictures">
+      
       <div className="mainPicturesSlide">
         {slideProducts
           ? slideProducts.map((slideProduct) => {

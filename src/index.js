@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Navbar from './Components/Navbar';
 import { BrowserRouter , Route , Routes } from 'react-router-dom';
-import Products from './Components/Products';
 import Product from './Components/Product';
 import Contactos from './Pages/Contactos/contactos';
 import HomePage from './Pages/HomePage/homePage';
