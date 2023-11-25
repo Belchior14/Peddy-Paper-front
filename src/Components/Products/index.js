@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { client } from "../../client";
 import "./products.css";
 import { Link } from "react-router-dom";
+import Loading from "../Loading";
+
 
 function Products() {
   const [products, setProducts] = useState();
@@ -109,7 +111,7 @@ function Products() {
             );
           })
         ) : (
-          <div>hello </div>
+          <div> <Loading/> </div>
         )}
       </div>
 

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const client = axios.create({
-  baseURL:"http://localhost:5005"
+  baseURL:process.env.REACT_APP_BACKEND_URL /* || process.env.test_REACT_APP_BACKEND_URL */
 });
 
 /* client.interceptors.request.use((request) => {
