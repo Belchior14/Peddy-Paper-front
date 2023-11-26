@@ -119,6 +119,7 @@
     .product {
         display: flex;
         justify-content: space-evenly;
+        color:white
     }
 
     .details {
@@ -165,6 +166,7 @@
         justify-content: center;
         align-items: center;
         gap: 15px;
+        color: white;
         
     }
 

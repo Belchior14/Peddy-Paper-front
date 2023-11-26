@@ -16,7 +16,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter >
-    <Snowfall snowflakeCount={100} />
+   {/*  <Snowfall snowflakeCount={100} /> */}
     <Navbar />
 
     <Routes>

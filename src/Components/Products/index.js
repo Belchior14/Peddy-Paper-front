@@ -73,7 +73,7 @@ function Products() {
       </div>
       <div className="orderForm">
         <div>
-          <h3>Ordenar por:</h3>
+          <h3 className="ordenar">Ordenar por:</h3>
         </div>
           <div className="buttonsOrderContainer">
         <div>
