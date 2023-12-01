@@ -39,6 +39,7 @@ body{
     min-width: 250px;
     max-width: 251px;
     text-decoration: none;
+    
 }
 
 .artigo{
@@ -48,13 +49,13 @@ body{
   max-width: 200px;
   color: white;
   text-decoration: none;
+  
 }
 
 
 .nameProduct{
     font-weight: bold;
-   
-}
+    }
 
 .ordenar{
   color: white  ;
