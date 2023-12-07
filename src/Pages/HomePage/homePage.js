@@ -33,7 +33,7 @@ function HomePage() {
           <h4 className="containerTitle">Sobre nós</h4>
           <p className="containerText">
             Na HMS3DPrinting estamos compremetidos em transformar suas ideais em
-            realidade tridimensional. Fundada no início de 2023, a nossa emmpresa
+            realidade tridimensional. Fundada no início de 2023, a nossa empresa
             dedica-se a fornecer serviços de impressão 3D de alta qualidade e
             soluções de fabricação personalizadas para atender às suas
             necessidades.

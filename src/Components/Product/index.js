@@ -62,10 +62,6 @@ function Product() {
     navigate("/contactos");
   };
 
-  if (product) {
-    console.log(product.quantity);
-  }
-
   return (
     <div className="test">
       {product ? (

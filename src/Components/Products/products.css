@@ -34,12 +34,19 @@ body{
     gap: 10px;
     border: 2px solid #ffffff;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    margin: 10px;
     padding:30px 50px 30px 50px;
     min-width: 250px;
     max-width: 251px;
-    text-decoration: none;
-    
+    text-decoration: none;    
+}
+
+.testProduct{
+  margin: 10px;
+}
+
+.testProduct :hover {
+  transform: scale(1.1);
+  transition: 1s;
 }
 
 .artigo{

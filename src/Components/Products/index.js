@@ -93,7 +93,7 @@ function Products() {
         {products ? (
           filteredProduts().map((product, idx) => {
             return (
-              <div key={idx}>
+              <div key={idx} className="testProduct">
                 <Link style={{textDecoration: 'none'}} to={`/product/${product._id}`}>
                   <div className="oneProduct">
                     <p className="artigo">
