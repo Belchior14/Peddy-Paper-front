@@ -25,7 +25,7 @@ function Slider() {
         {slideProducts
           ? slideProducts.map((slideProduct) => {
               return (
-                <img src={slideProduct.images[0]} alt={slideProduct.name} />
+                <img src={slideProduct.images[0]} alt={slideProduct.name}  className="zoomImage"/>
               );
             })
           : null}
@@ -35,7 +35,7 @@ function Slider() {
         {slideProducts
           ? slideProducts.map((slideProduct) => {
               return (
-                <img src={slideProduct.images[0]} alt={slideProduct.name} />
+                <img src={slideProduct.images[0]} alt={slideProduct.name}  className="zoomImage" />
               );
             })
           : null}
