@@ -17,7 +17,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter >
    {/*  <Snowfall snowflakeCount={100} /> */}
-    <Navbar />
+ 
 
     <Routes>
     <Route path="/" element={<HomePage />} />
