@@ -5,7 +5,7 @@ header{
 
 }
 
-.homePage{
+.loginDiv{
 
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@ header{
 
 }
 
-.registerForm > form,
+.loginForm ,
 .teamMembersName {
     display: flex;
     flex-direction: column;
@@ -28,8 +28,8 @@ label{
 
 
 
-.registerForm > form > input,
-.teamMembersName > input,
+.loginForm > form > input,
+input,
 label,
 select,
 option
@@ -47,7 +47,7 @@ option
 }
 
 
-.registerBtn {
+.loginbtn {
     background: #FF9E42;
     background-image: -webkit-linear-gradient(top, #FF9E42, #FFCB99);
     background-image: -moz-linear-gradient(top, #FF9E42, #FFCB99);
@@ -73,7 +73,7 @@ option
     text-align: center;
  }
  
- .registerBtn:hover {
+ .loginbtn:hover {
     border: solid #7A7A7A 1px;
     background: #A9C2E9;
     background-image: -webkit-linear-gradient(top, #A9C2E9, #FFFFFF);
@@ -87,12 +87,12 @@ option
     text-decoration: none;
  }
 
- .loginLink{
+ .signupLink{
     font-weight: bolder;
     color: #FF9E42;
  }
 
- .goToLogin{
+ .goToRegister{
     color: black;
     text-decoration: none;
     color: #FF9E42;

@@ -12,6 +12,7 @@ function Register() {
     const [teamName, setTeamName] = useState("");
     const [team, setTeam] = useState([]) ;
     const [selectedValue, setSelectedValue] = useState();
+    const [errorRegister , setErrorRegister] = useState();
 
 
   
@@ -49,7 +50,12 @@ function Register() {
                console.log("resposta", response);
                navigate("/products")
              })
-             .catch((error) => console.log(error));
+             .catch((error) => {
+              console.log(error)
+              setErrorRegister(error.response.data.message)
+              setTeam([])
+              
+            } );
       };
 
 return(
@@ -85,7 +91,16 @@ return(
           ))}
       </div>
 
-      <button>Click</button>
+      <button className="registerBtn">Registo</button>
+
+      {errorRegister && (
+                                <div className="text-danger">{errorRegister}</div>
+                            )}
+
+<p className="loginLink">
+            Already have an account? <Link to="/login" className="goToLogin">Click here</Link>
+          </p>                    
+
 
         </form>
      
